@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password:
+    url: jdbc:mysql://127.0.0.1:3306/cobar?useSSL=false
+  jpa:
+    #show-sql: true
+    hibernate:
+         naming:
+             physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+clouduri:
+   itemcompleteuri: http://www.icobar.cn/CobarApi/Order/Update
+logging:
+  config:
+  file: log/cobar_system.log
+  level: info
